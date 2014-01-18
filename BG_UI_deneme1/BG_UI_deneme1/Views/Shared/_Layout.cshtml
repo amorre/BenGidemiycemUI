@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>@ViewBag.Title</title>
+    <link rel="profile" href="http://microformats.org/profile/hcalendar" />
+    <link rel="stylesheet" href="~/Content/style.css" />
+    <link rel="stylesheet" href="~/Content/default.css" id="color" />
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="~/Content/ie7.css" media="screen"/><![endif]-->
+    <script src="~/Scripts/modernizr.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="~/Scripts/jquery.cycle.all.latest.min.js"></script>
+    <script src="~/Scripts/jquery.flexslider-min.js"></script>
+    <script src="~/Scripts/jquery.carouFredSel-5.6.1-packed.js"></script>
+    <script src="~/Scripts/superfish.js"></script>
+    <script src="~/Scripts/hoverIntent.js"></script>
+    <script src="~/Scripts/jquery.fitvid.js"></script>
+    <script src="~/Scripts/jquery.jplayer.js"></script>
+    <script src="~/Scripts/jplayer.playlist.min.js"></script>
+    <!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="~/Scripts/selectivizr-min.js"></script><![endif]-->
+    <script defer="" src="~/Scripts/scripts.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <header id="header">
+        <div class="wrap group">
+            <div class="social-wgt group">
+                <aside class="widget group">
+                    <a title="Bizi Twitter'da Takip Edin." class="icn twitter" href="http://twitter.com/Ben_Gidemiycem">Bizi Twitter'da Takip Edin.</a>
+                    <a title="Bizi Facebook'da Beğenin." class="icn facebook" href="http://www.facebook.com/bengidemiycem">Bizi Facebook'da Beğenin.</a>
+                </aside>
+            </div>
+            <!-- .social-wgt -->
+            <div class="head-wrap group">
+                <hgroup class="logo imglogo">
+                    <h1><a href="#"><img src="~/Content/images/logo2.png" alt="StereoSquared" /></a></h1>
+                </hgroup>
+                <nav>
+                    <ul id="navigation" class="group">
+                        <li class="current_page_item current-menu-item"><a href="~/Views/Home/index.cshtml">Ana Sayfa /</a></li>
+                        <li>
+                            @Html.ActionLink("Etkinlikler","Events","Event")
+                            <ul>
+                                <li><a href="#">Müzik</a></li>
+                                <li><a href="#">Spor</a></li>
+                                <li><a href="#">Sahne Sanatları</a></li>
+                                <li><a href="#">Eğitim & Diğer</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Burdayım Aşkım /</a></li>
+                        <li>@Html.ActionLink("İletişim","Contact","Home")</li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- .head-wrap -->
+        </div>
+        <!-- .wrap < header -->
+    </header>
+    
+    @RenderBody()
+
+
+    <footer id="footer">
+                <div class="wrap group">
+                <div class="widget-block group">
+                    <aside class="widget audio-player">
+                        <div class="audio-wrap">
+                            <div id="jp500" class="jp-jplayer"></div>
+                            <div id="jp-203" class="jp-audio">
+                                <div class="jp-type-single">
+                                    <div class="jp-gui jp-interface">
+                                        <ul class="jp-controls">
+                                            <li><a href="#" class="jp-play" tabindex="1">Play</a></li>
+                                            <li><a href="#" class="jp-pause" tabindex="1">Pause</a></li>
+                                        </ul>
+                                        <div class="jp-progress">
+                                            <div class="jp-seek-bar">
+                                                <div class="jp-play-bar"></div>
+                                            </div>
+                                        </div>
+                                        <div class="jp-current-time"></div>
+                                        <div class="jp-volume-bar">
+                                            <div class="jp-volume-bar-value">
+                                                <div class="jp-volume-bar-knob"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="jp-playlist">
+                                        <ul>
+                                            <!-- The method Playlist.displayPlaylist() uses this unordered list -->
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .audio-wrap -->
+                    </aside>
+                    <aside class="widget widget_ci_twitter_widget group">
+                        <h3 class="widget-title">Twitter</h3>
+                        <div class="twitter_update_list">
+                            <ul>
+                                <li>
+                                    <br />
+                                    <span>Olark is an amazing service <a href="http://t.co/QZMt1zp7">http://t.co/QZMt1zp7</a></span>
+                                    <a href="http://twitter.com/cssigniter/statuses/179650190767169540" class="twitter-time">1 day ago</a>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </aside>
+                    <!-- twitter-widget -->
+                </div>
+                <!-- widget-block -->
+                <div class="site-copy">
+                    <span>A WordPress theme by <a href="http://www.cssigniter.com">cssigniter.com</a></span>
+                </div>
+            </div>
+            <!-- .wrap < #footer -->
+        </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>

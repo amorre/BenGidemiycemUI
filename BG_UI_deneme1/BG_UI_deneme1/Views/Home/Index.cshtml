@@ -1,0 +1,155 @@
+﻿@{
+    ViewBag.Title = "Ana Sayfa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<html>
+<body>
+<div id="main-content">
+    <div class="wrap">
+        <div class="inner-wrap">
+            <div class="sld-container group">
+                <div id="main-slider" class="flexslider">
+                    <ul class="slides group">
+                        <li class="sld-item group">
+                            <a href="#"><img src="Content/demo/aerosmith.jpg" alt="" /></a>
+                            <div class="sld-desc right">
+                                <h3><a href="#">Efsane grup Aerosmith, Türkiye'ye geliyor!</a></h3>
+                                <a href="#" class="ci-read-more">Devamı</a>
+                            </div>
+                            <!-- sld-desc -->
+                        </li>
+                        <li class="sld-item group">
+                            <a href="#"><img src="Content/demo/Juveniles-Nite-Five1.jpg" alt="" /></a>
+                            <div class="sld-desc right">
+                                <h3><a href="#">Juveniles, 10 Ocakta İKSV Salonda</a></h3>
+                                <a href="#" class="ci-read-more">Devamı</a>
+                            </div>
+                            <!-- sld-desc -->
+                        </li>
+                        <li class="sld-item group">
+                            <a href="#"><img src="Content/demo/JUSTIN-TIMBERLAKE.jpg" alt="" /></a>
+                            <div class="sld-desc right">
+                                <h3><a href="#">Justin, solo performansıyla İstanbul'da!!</a></h3>
+                                <a href="#" class="ci-read-more">Devamı</a>
+                            </div>
+                            <!-- sld-desc -->
+                        </li>                        
+                        <li class="sld-item group">
+                            <a href="#"><img src="Content/demo/slide02.jpg" alt="" /></a>
+                            <div class="sld-desc right">
+                                <h3><a href="#">Tips and tricks! Learn from the masters.</a></h3>
+                                <a href="#" class="ci-read-more">Devamı</a>
+                            </div>
+                            <!-- sld-desc -->
+                        </li>
+                        <li class="sld-item group">
+                            <a href="#"><img src="Content/demo/slide01.jpg" alt="" /></a>
+                            <div class="sld-desc right">
+                                <h3><a href="#">Tiësto Announces Full Support for Pacha Ibiza</a></h3>
+                                <a href="#" class="ci-read-more">Devamı</a>
+                            </div>
+                            <!-- sld-desc -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- .flexslider -->
+            </div>
+            <!-- .sld-container -->
+            <section class="widget-block group">
+                <div class="block widget">
+                    <h3>Latest Release</h3>
+                    <a href=""><img src="Content/images/dummy/threecol.jpg" alt="" /></a>
+                    <h4><a href="#">Northern Exposure</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+                <div class="block widget">
+                    <h3>From the Blog</h3>
+                    <a href=""><img src="Content/demo/thumb01.jpg" alt="" /></a>
+                    <h4><a href="#">Off to Ibiza!</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+                <div class="block widget last">
+                    <h3>Who's Behind Stereo</h3>
+                    <a href=""><img src="Content/demo/thumb02.jpg" alt="" /></a>
+                    <h4><a href="#">Northern Exposure</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+            </section>
+            <!-- .widget-block -->
+            <section class="widget-block mid-section group">
+                <div class="block widget group block-videos two-thirds">
+                    <h3>Alakalı Videolar</h3>
+                    <div id="video-slider" class="flexslider">
+                        <ul class="slides">
+                            <li class="sld-vid-item">
+                                <iframe width="621" height="378" src="http://www.youtube.com/embed/SFoWxGFZ5d0" frameborder="0"></iframe>
+                            </li>
+                            <li class="sld-vid-item">
+                                <iframe width="621" height="378" src="http://www.youtube.com/embed/-3j6W3IWzsk" frameborder="0"></iframe>
+                            </li>
+                            <li class="sld-vid-item">
+                                <iframe width="621" height="378" src="http://www.youtube.com/embed/IzPteVEErNs" frameborder="0"></iframe>
+                            </li>
+                            <li class="sld-vid-item">
+                                <iframe width="621" height="378" src="http://www.youtube.com/embed/PnRl9iRq3Jg" frameborder="0"></iframe>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- .flexslider-vid -->
+                </div>
+                <!-- .block-videos -->
+                @Html.Partial("_UpcomingEvents")
+                <!-- .block-events -->
+            </section>
+            <!-- .widget-block -->
+            <section class="widget-block group">
+                <div class="widget block block-galleries last">
+                    <h3>Photo Galleries</h3>
+                    <span class="gallery-nav group">
+                        <a href="#">View All &raquo;</a>
+                    </span>
+                    <ul class="gallery-list group">
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="Content/demo/thumb03.jpg" alt="" />
+                                    <figcaption>18 Photos</figcaption>
+                                    <span class="trans"></span>
+                                </figure>
+                            </a>
+                            <h4><a href="#">Beach party photos</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="Content/demo/thumb04.jpg" alt="" />
+                                    <figcaption>5 Photos</figcaption>
+                                    <span class="trans"></span>
+                                </figure>
+                            </a>
+                            <h4><a href="#">Northern Lights Party</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="Content/demo/thumb05.jpg" alt="" />
+                                    <figcaption>18 Photos</figcaption>
+                                    <span class="trans"></span>
+                                </figure>
+                            </a>
+                            <h4><a href="#">South Party Photos</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- .inner-wrap -->
+    </div>
+    <!-- .wrap < #main-content -->
+</div>
+<!-- #main-content -->
+</body>
+</html>

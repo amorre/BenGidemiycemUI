@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";   
+}
+
+<html>
+    <body>
+
+        <div id="main-content">
+            <div class="wrap">
+                <div class="inner-wrap">
+                    <div class="page-content group">
+                        <article class="entry group">
+                            <h2 class="page-title">Contact Us</h2>
+                            <div class="entry-content group">
+                                <p>Feel free to contact us anytime using our marvelous contact form.</p>
+                                <form id="contact-form" action="">
+                                    <fieldset>
+                                        <label for="name">Your Name:</label>
+                                        <input id="name" type="text" />
+                                    </fieldset>
+                                    <fieldset>
+                                        <label for="email">Your Email:</label>
+                                        <input id="email" type="text" />
+                                    </fieldset>
+                                    <fieldset>
+                                        <label for="tel">Your Telephone Number:</label>
+                                        <input id="tel" type="text" />
+                                    </fieldset>
+                                    <fieldset>
+                                        <label for="message">Your Message:</label>
+                                        <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+                                    </fieldset>
+                                    <button type="submit" class="button">SEND</button>
+                                </form>
+                            </div>
+                        </article>
+                        <div id="sidebar">
+                            @Html.Partial("_UpcomingEvents")
+                            <!-- .block-events -->
+                            <aside class="widget widget_search group">
+                                <h3>Search</h3>
+                                <form action="" id="searchform" method="get" role="search">
+                                    <div>
+                                        <input type="text" onblur="if (this.value == '') {this.value = 'Search';}" onfocus="if (this.value == 'Search') {this.value = '';}" size="18" value="Search" id="s" name="s" />
+                                        <input type="submit" value="Search" id="searchsubmit" />
+                                    </div>
+                                </form>
+                            </aside>
+
+                            <aside class="widget group">
+                                <h3>Social</h3>
+                                <a href="#" class="icn twitter">Twitter</a> <a href="#" class="icn facebook">Facebook</a>
+                                <a href="#" class="icn flickr">Flickr</a> <a href="#" class="icn picasa">Picasa</a>
+                                <a href="#" class="icn lnkdin">Linked In</a> <a href="#" class="icn gplus">Google+</a>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
